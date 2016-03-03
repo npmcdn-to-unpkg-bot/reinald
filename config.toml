@@ -1,0 +1,66 @@
+baseurl = "http://reinaldvandewalle.com/"
+languageCode = "es"
+title = "Reinald Arte Funcional"
+
+[params.menu]
+  galleriesText = "Galerías"
+  aboutText = "Bio"
+  contactText = "Contacto"
+
+[params.header]
+  leadIn = "Bienvenido a Reinald Arte Funcional"
+  heading = "BASADO EN MATERIALES NATURALES"
+  buttonText = "A ver"
+
+[params.galleries]
+  galleriesText = "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+
+[params.gallerylist]
+  [params.gallerylist.1]
+    galleryName = "Galeria Uno"
+    galleryImage = "gallery-1.jpg"
+    galleryCaption = "caption 1"
+  [params.gallerylist.2]
+    galleryName = "Galeria Dos"
+    galleryImage = "gallery-2.jpg"
+    galleryCaption = "caption 2"
+  [params.gallerylist.3]
+    galleryName = "Galeria Tres"
+    galleryImage = "gallery-3.jpg"
+    galleryCaption = "caption 3"
+  [params.gallerylist.4]
+    galleryName = "Galeria Cuatro"
+    galleryImage = "gallery-4.jpg"
+    galleryCaption = "caption 4"
+  [params.gallerylist.5]
+    galleryName = "Galeria Cinco"
+    galleryImage = "gallery-5.jpg"
+    galleryCaption = "caption 5"
+  [params.gallerylist.6]
+    galleryName = "Galeria Seis"
+    galleryImage = "gallery-6.jpg"
+    galleryCaption = "caption 6"
+
+[params.about]
+  aboutText = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+
+[params.aboutlist]
+  [params.aboutlist.1]
+    aboutItemTitle = "AT VERO EOS"
+    aboutItemDescription = "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis"
+  [params.aboutlist.2]
+    aboutItemTitle = "TEMPORIBUS"
+    aboutItemDescription = "Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe"
+  [params.aboutlist.3]
+    aboutItemTitle = "ACCUSAMUS"
+    aboutItemDescription = "Accusamus et iusto odio dignissimos ducimus qui blanditiis"
+  [params.aboutlist.4]
+    aboutItemTitle = "ITAQUE"
+    aboutItemDescription = "Itaque earum rerum hic tenetur a sapiente, ut aut reiciendis maiores"
+
+[params.contact]
+  contactText = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+  contactEmail = "correo@electronico.com"
+
+[params.footer]
+  footerText = "Copyright © 2016 Reinald Van De Walle, Last Updated: March 2016"

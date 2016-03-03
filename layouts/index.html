@@ -1,0 +1,117 @@
+{{ partial "top" . }}
+		<!-- Header -->
+		<header>
+			<div class="container">
+				<div class="slider-container">
+					<div class="intro-text">
+						<div class="intro-lead-in">{{.Site.Params.header.leadIn}}</div>
+						<div class="intro-heading">{{.Site.Params.header.heading}}</div>
+						<a href="#galleries" class="page-scroll btn btn-xl">{{.Site.Params.header.buttonText}}</a>
+					</div>
+				</div>
+			</div>
+		</header>
+
+		<section id="galleries">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12 text-center">
+						<div class="section-title">
+							<h2>{{.Site.Params.menu.galleriesText}}</h2>
+							<p>{{.Site.Params.galleries.galleriesText}}</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="row row-0-gutter">
+					{{range .Site.Params.gallerylist}}
+					<!-- start portfolio item -->
+					<div class="col-md-4 col-0-gutter">
+						<div class="ot-portfolio-item">
+							<figure class="effect-bubba">
+								<img src="galleries/images/{{.galleryImage}}" alt="img02" class="img-responsive" />
+								<figcaption>
+									<h2>{{.galleryName}}</h2>
+									<p>{{.galleryCaption}}</p>
+									<a href="#" data-toggle="modal" data-target="#Modal-1">View more</a>
+								</figcaption>
+							</figure>
+						</div>
+					</div>
+					<!-- end portfolio item -->
+					{{end}}
+				</div>
+			</div><!-- end container -->
+		</section>
+
+		<section id="about" class="dark-bg">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12 text-center">
+						<div class="section-title">
+							<h2>{{.Site.Params.menu.aboutText}}</h2>
+							<p>{{.Site.Params.about.aboutText}}</p>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					{{range .Site.Params.aboutlist}}
+					<!-- about module -->
+					<div class="col-md-3 text-center">
+						<div class="mz-module-about">
+							<i class="fa fa-check ot-circle"></i>
+							<h3>{{.aboutItemTitle}}</h3>
+							<p>{{.aboutItemDescription}}</p>
+						</div>
+					</div>
+					<!-- end about module -->
+					{{end}}
+				</div>
+			</div>
+			<!-- /.container -->
+		</section>
+
+		<section id="contact" class="light-bg">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12 text-center">
+						<div class="section-title">
+							<h2>{{.Site.Params.menu.contactText}}</h2>
+							<p>{{.Site.Params.contact.contactText}}</p>
+							<p><i class="fa fa-envelope"></i> {{.Site.Params.contact.contactEmail}}</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<p id="back-top">
+			<a href="#top"><i class="fa fa-angle-up"></i></a>
+		</p>
+		<footer>
+			<div class="container text-center">
+				<p>{{.Site.Params.footer.footerText}}</p>
+			</div>
+		</footer>
+
+		<!-- Modal for portfolio item 1 -->
+		<div class="modal fade" id="Modal-1" tabindex="-1" role="dialog" aria-labelledby="Modal-label-1">
+			<div class="modal-dialog" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+						<h4 class="modal-title" id="Modal-label-1">Excepteur sint</h4>
+					</div>
+					<div class="modal-body">
+						<img src="galleries/images/gallery-1.jpg" alt="img01" class="img-responsive" />
+						<div class="modal-works"><span>Uno</span><span>Dos</span></div>
+						<p>Esto lo vamos a reemplazar con una galeria de losas</p>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+{{ partial "bottom" . }}
