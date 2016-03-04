@@ -1,36 +1,8 @@
-/*------------------------------------------------------------------
-[Master Stylesheet]
 
-Project:	Reinald
-Based on Sanza theme by:	MOOZ Themes / www.MOOZthemes.com
-
-[Table of contents]
-
-1. General
-2. Header
-3. Navigation
-4. Sections
-5. Footer
-6. Components
-
-[Color codes]
-
-Buttons, etc:	#726FB9 (blue)
-hover color:	#fed136 (yellow)
--------------------------------------------------------------------*/
-
-/*--------------------
-Import Google Fonts
---------------------*/
-
-/* main font for menu. */
 @import url(http://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900);
-/* font for headings, text, tags */
+
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:300,400,500,600,700,800);
 
-/*--------------------
-1. General
---------------------*/
 
 body {
 	margin: 0px;
@@ -111,10 +83,6 @@ section ul li:before {
 	color: #A5682A;
 }
 
-/*--------------------
-1.1 Reset bootstrap
---------------------*/
-
 .row-0-gutter {
     margin-left: -13px;
     margin-right: -13px;
@@ -125,18 +93,20 @@ section ul li:before {
 	padding-right: 0;
 }
 
-/*--------------------
-2. Navigation
---------------------*/
-
 .navbar-default {
-	background-color: #222;
-	border-color: transparent
+	background-color: #FFFFFF;
+	border-bottom: 1px solid #828282;
+	padding: 5px 0
 }
 .navbar-default .navbar-brand {
 	color: #fff;
 	font-family: "Montserrat",sans-serif;
 	padding: 0px;
+}
+
+.navbar-default .navbar-brand img {
+	padding: 5px;
+	width: 80%;
 }
 .navbar-default .navbar-brand:hover,.navbar-default .navbar-brand:focus,.navbar-default .navbar-brand:active,.navbar-default .navbar-brand.active {
 	color: #fec503
@@ -145,14 +115,14 @@ section ul li:before {
 	border-color: rgba(255,255,255,.02)
 }
 .navbar-default .navbar-toggle {
-	background-color: #fed136;
-	border-color: #fed136
+	background-color: #A5682A;
+	border-color: #A5682A;
 }
 .navbar-default .navbar-toggle .icon-bar {
 	background-color: #fff
 }
 .navbar-default .navbar-toggle:hover,.navbar-default .navbar-toggle:focus {
-	background-color: #fed136
+	background-color: #A5682A
 }
 .navbar-default .nav li a {
 	font-family: "Roboto",sans-serif;
@@ -162,7 +132,7 @@ section ul li:before {
 	color:#000;
 }
 .navbar-default .nav li a:hover,.navbar-default .nav li a:focus {
-	color: #fed136;
+	color: #A5682A;
 	outline: 0
 }
 
@@ -180,20 +150,28 @@ section ul li:before {
 	.navbar-default
 	{
 		background-color: rgba(255, 255, 255, 0.65);
-		padding: 5px 0;
+		padding: 30px 0;
 		-webkit-transition:padding .3s;
 		-moz-transition:padding .3s;
 		transition:padding .3s;
 		border:0
 	}
+
+	.navbar-default .navbar-brand img {
+		padding: 0px;
+		width: 100%;
+	}
+
 	.navbar-default .navbar-brand {
-		font-size: 2em;
+		/* font-size: 2em; */
 		-webkit-transition:all .3s;
 		-moz-transition:all .3s;
-		transition:all .3s
+		transition:all .3s;
+		margin-top: 15px;
 	}
+
 	.navbar-default .navbar-nav>.active>a {
-		border-radius: 3px
+		border-radius: 3px;
 	}
 	.navbar-default.navbar-shrink {
 		background-color: #FFFFFF;
@@ -201,14 +179,11 @@ section ul li:before {
 		padding: 5px 0
 	}
 	.navbar-default.navbar-shrink .navbar-brand {
-		font-size: 1.5em;
+		/* font-size: 1.5em; */
 		margin-top: 10px;
 	}
-}
 
-/*--------------------
-3. Header
---------------------*/
+}
 
 header {
 	background-image: url(../images/intro.jpg);
@@ -275,10 +250,6 @@ header .intro-text .intro-heading {
 	}
 }
 
-/*--------------------
-4. Sections
---------------------*/
-
 .section-title h2 {
 	font-size: 34px;
 	text-transform: uppercase;
@@ -314,11 +285,8 @@ header .intro-text .intro-heading {
 	/* margin: 20px 100px 60px 100px; */
 }
 
-/*--------------------
-4.1. About
---------------------*/
 
-.mz-module-about h3 {
+.module-about h3 {
 	font-weight: 500;
 	font-size: 19px;
 	text-transform: uppercase;
@@ -327,11 +295,11 @@ header .intro-text .intro-heading {
 	margin-bottom: 20px;
 }
 
-.dark-bg .mz-module-about h3 {
+.dark-bg .module-about h3 {
 	color: #FFFFFF;
 }
 
-.mz-module-about p {
+.module-about p {
 	font-size: 14px;
 	font-weight: 300;
 	line-height: 22px;
@@ -351,9 +319,6 @@ header .intro-text .intro-heading {
 	font-size: 24px;
 }
 
-/*--------------------
-4.2. Skills
---------------------*/
 
 .section-text h3 {
 	margin: 0 0 30px;
@@ -375,9 +340,6 @@ header .intro-text .intro-heading {
 	color: #dfdfdf;
 }
 
-/*--------------------
-4.3. Portfolio
---------------------*/
 
 figure {
 	position: relative;
@@ -492,10 +454,6 @@ figure.effect-bubba:hover p {
 	transform: translate3d(0,0,0);
 }
 
-/*--------------------
-4.4. Dark Short section (counters, quote, etc)
---------------------*/
-
 .light-bg {
 	background-color: #f8f8f8;
 }
@@ -512,146 +470,6 @@ figure.effect-bubba:hover p {
 	padding-bottom: 70px;
 }
 
-.counter-item h2 {
-	color: #fff;
-	font-size: 60px;
-	font-weight: 900;
-}
-
-.counter-item h6 {
-	color: #FFF;
-	font-size: 16px;
-	font-weight: 700;
-	margin: 10px 0 0 0;
-	text-transform: uppercase;
-}
-
-/*--------------------
-4.5. Partners Slider
---------------------*/
-
-.owl-portfolio .owl-controls {
-	position: absolute;
-	left: 0;
-	top: 38%;
-	width: 100%;
-}
-
-.owl-portfolio .owl-controls .owl-nav [class*=owl-] {
-	padding: 8px 17px;
-	background: rgba(0, 0, 0, 0.18);
-	border-radius: 0;
-	margin: 0;
-	font-size: 20px;
-	z-index:1000;
-}
-
-.owl-portfolio .owl-controls .owl-nav [class*=owl-]:hover {
-    background: #000;
-    color: #fff;
-    text-decoration: none;
-}
-
-.owl-portfolio .owl-controls .owl-prev {
-	float: left;
-}
-
-.owl-portfolio .owl-controls .owl-next {
-	float: right;
-}
-
-.owl-portfolio-item {
-	text-align: center;
-	display: inline-block;
-}
-
-.partner-logo {
-	height: 80px;
-	text-align: center;
-	display: inline-block;
-}
-
-.partner-logo img {
-	height: 100%;
-	width: auto !important;
-}
-
-.owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
-    background: #A5682A;
-}
-
-.owl-theme .owl-dots .owl-dot span {
-    width: 30px;
-    height: 5px;
-    margin: 15px 7px 0 7px;
-    background: #d6d6d6;
-    display: block;
-    -webkit-backface-visibility: visible;
-    -webkit-transition: opacity 200ms ease;
-    -moz-transition: opacity 200ms ease;
-    -ms-transition: opacity 200ms ease;
-    -o-transition: opacity 200ms ease;
-    transition: opacity 200ms ease;
-    -webkit-border-radius: 30px;
-    -moz-border-radius: 30px;
-    border-radius: 0;
-}
-
-.owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
-    background: #A5682A;
-}
-
-/*--------------------
-4.6. Team
---------------------*/
-
-.team-item {
-	text-align: center;
-	background-color: #fff;
-}
-
-.team-item h3 {
-	font-size: 16px;
-	font-weight: 800;
-	text-transform: uppercase;
-	color: #2D2D2D;
-}
-
-.team-item .team-position {
-	color: #989898;
-	font-size: 12px;
-	margin: 15px 0 10px;
-	text-transform: uppercase;
-	font-weight: 500;
-	letter-spacing: 2px;
-}
-
-.team-item p {
-    font-size: 13px;
-    font-weight: 400;
-    color: #292929;
-    padding: 5px 10px 20px 10px;
-}
-
-/*--------------------
-4.7. Contacts
---------------------*/
-
-section#contact form {
-	margin-top: 15px;
-}
-section#contact.form-group {
-margin-bottom: 25px;
-}
-
-section#contact .form-group input, section#contact .form-group textarea {
-	padding: 15px;
-	border: 1px solid #BBBBBB;
-	border-radius: 0;
-	-webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
-	box-shadow: inset 0 0px 0px rgba(0,0,0,.075);
-	font-size: 13px;
-}
 
 .contact h3 {
 	margin-bottom: 30px;
@@ -670,9 +488,6 @@ section#contact .form-group input, section#contact .form-group textarea {
 	margin-right: 5px;
 }
 
-/*--------------------
-5. Footer
---------------------*/
 
 footer {
 	padding: 30px;
@@ -699,9 +514,6 @@ footer p a span {
 	font-weight: 700;
 }
 
-/*--------------------
-6. Modal
---------------------*/
 
 .modal-content {
 	border-radius: 0;
@@ -738,9 +550,6 @@ font-size: 11px;
 	padding: 5px 10px;
 }
 
-/*--------------------
-7. Components
---------------------*/
 
 .btn-xl:hover, .btn-xl:focus, .btn-xl:active, .btn-xl.active, .open .dropdown-toggle.btn-xl {
 	color: #fff;
@@ -788,54 +597,4 @@ color: #fff;
     letter-spacing: 2px;
     font-size: 16px;
     padding: 17px 45px;
-}
-
-/* Back to top button
----------------------------------- */
-#back-top {
-	position: fixed;
-	z-index: 1000;
-	bottom: 40px;
-	right: 50px;
-}
-#back-top a {
-	width: 60px;
-	height: 60px;
-	display: block;
-	text-align: center;
-	font: 11px/100% Arial, Helvetica, sans-serif;
-	text-transform: uppercase;
-	text-decoration: none;
-	color: #FFFFFF;
-	background: #A9A9B1;
-	/* background color transition */
-	-webkit-transition: 1s;
-	-moz-transition: 1s;
-	transition: 1s;
-}
-#back-top a:hover {
-	background: #fed136;
-}
-/* arrow icon (span tag) */
-#back-top i {
-	margin-top: 15px;
-	font-size: 28px;
-}
-
-@media only screen
-and (min-width : 320px)
-and (max-width : 480px) {
-#back-top {
-	position: fixed;
-	bottom: 10px;
-	right: 30px;
-}
-#back-top a {
-	width: 40px;
-	height: 40px;
-}
-#back-top i {
-	margin-top: 7px;
-	font-size: 20px;
-}
 }

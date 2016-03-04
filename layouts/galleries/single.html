@@ -1,3 +1,7 @@
 {{ partial "top" . }}
-
+<br><br><br><br>
+{{.Permalink}}<br>
+{{.RelPermalink}}<br>
+{{ "" | relURL }}
+{{ ref . "index.html"}}
 {{ partial "bottom" . }}
