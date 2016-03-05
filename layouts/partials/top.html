@@ -13,8 +13,7 @@
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 
-		<link href="{{.Site.BaseURL}}/css/style.css" rel="stylesheet">
-
+		<link href="{{if ne .Section ""}}../../{{end}}css/style.css" rel="stylesheet">
 	</head>
 	<body id="page-top">
 		<nav class="navbar navbar-default navbar-fixed-top">
@@ -30,17 +29,17 @@
 				</div>
 				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 					<ul class="nav navbar-nav navbar-right">
-						<li>
-							<a href="{{if ne .Section ""}}{{.Site.BaseURL}}/{{end}}#page-top">Home</a>
+						<li class="nohighlight">
+							<a href="{{if ne .Section ""}}../../{{end}}#page-top">Home</a>
 						</li>
 						<li>
-							<a href="{{if ne .Section ""}}{{.Site.BaseURL}}/{{end}}#galleries">{{.Site.Params.menu.galleriesText}}</a>
+							<a href="{{if ne .Section ""}}../../{{end}}#galleries">{{.Site.Params.menu.galleriesText}}</a>
 						</li>
 						<li>
-							<a href="{{if ne .Section ""}}{{.Site.BaseURL}}/{{end}}#about">{{.Site.Params.menu.aboutText}}</a>
+							<a href="{{if ne .Section ""}}../../{{end}}#about">{{.Site.Params.menu.aboutText}}</a>
 						</li>
 						<li>
-							<a href="{{if ne .Section ""}}{{.Site.BaseURL}}/{{end}}#contact">{{.Site.Params.menu.contactText}}</a>
+							<a href="{{if ne .Section ""}}../../{{end}}#contact">{{.Site.Params.menu.contactText}}</a>
 						</li>
 					</ul>
 				</div>

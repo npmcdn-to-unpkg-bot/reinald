@@ -83,6 +83,10 @@ section ul li:before {
 	color: #A5682A;
 }
 
+.spacer {
+    margin-top: 80px;
+}
+
 .row-0-gutter {
     margin-left: -13px;
     margin-right: -13px;
@@ -131,7 +135,12 @@ section ul li:before {
 	letter-spacing: 1px;
 	color:#000;
 }
-.navbar-default .nav li a:hover,.navbar-default .nav li a:focus {
+.navbar-default .nav li a:hover {
+	color: #A5682A;
+	outline: 0
+}
+
+.navbar-default .nav li:not(.nohighlight) a:focus {
 	color: #A5682A;
 	outline: 0
 }
@@ -597,4 +606,18 @@ color: #fff;
     letter-spacing: 2px;
     font-size: 16px;
     padding: 17px 45px;
+}
+
+.grid {
+  margin: 0 auto;
+	opacity: 0;
+	/* animation:fadeIn ease-in 1;
+	animation-duration:1s; */
+}
+
+@keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+
+.grid-sizer,
+.grid-item {
+  width: 350px;
 }
