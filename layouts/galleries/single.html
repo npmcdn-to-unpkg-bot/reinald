@@ -4,56 +4,23 @@
   <div class="container">
     <div class="row spacer"></div>
     <div class="row">
-      <div class="grid">
+      <div class="grid zoom-gallery">
         <div class="grid-sizer"></div>
+        {{range .Params.gallery.items}}
         <div class="grid-item">
-          SINGLE
-          <img class="img-responsive" src="images/image1.jpg" alt="">
+          <div class="panel panel-default">
+            <div class="panel-caption text-center">
+              {{.itemCaption}}
+            </div>
+            <a class="gallery-item" href="images/{{.itemImage}}">
+              <img class="img-responsive" src="images/{{.itemThumb}}" alt="">
+            </a>
+            <div class="panel-footer text-center">
+              {{.itemName}}
+            </div>
+          </div>
         </div>
-        <div class="grid-item">
-          SINGLE
-          <img class="img-responsive" src="images/image2.jpg" alt="">
-        </div>
-        <div class="grid-item">
-          SINGLE
-          <img class="img-responsive" src="images/image1.jpg" alt="">
-        </div>
-        <div class="grid-item">
-          SINGLE
-          <img class="img-responsive" src="images/image2.jpg" alt="">
-        </div>
-        <div class="grid-item">
-          SINGLE
-          <img class="img-responsive" src="images/image1.jpg" alt="">
-        </div>
-        <div class="grid-item">
-          SINGLE
-          <img class="img-responsive" src="images/image2.jpg" alt="">
-        </div>
-        <div class="grid-item">
-          SINGLE
-          <img class="img-responsive" src="images/image1.jpg" alt="">
-        </div>
-        <div class="grid-item">
-          SINGLE
-          <img class="img-responsive" src="images/image2.jpg" alt="">
-        </div>
-        <div class="grid-item">
-          SINGLE
-          <img class="img-responsive" src="images/image1.jpg" alt="">
-        </div>
-        <div class="grid-item">
-          SINGLE
-          <img class="img-responsive" src="images/image2.jpg" alt="">
-        </div>
-        <div class="grid-item">
-          SINGLE
-          <img class="img-responsive" src="images/image1.jpg" alt="">
-        </div>
-        <div class="grid-item">
-          SINGLE
-          <img class="img-responsive" src="images/image2.jpg" alt="">
-        </div>
+        {{end}}
       </div>
     </div>
   </div>
