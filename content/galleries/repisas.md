@@ -86,13 +86,13 @@ title = "Repisas"
   [gallery.items.17]
     itemName = "Item 1"
     itemCaption = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-    itemThumb = "123oct14-Ensamblajeyprimeraubicación1-thumb.jpg"
-    itemImage = "123oct14-Ensamblajeyprimeraubicación1.jpg"
+    itemThumb = "123oct14-Ensamblajeyprimeraubicacion1-thumb.jpg"
+    itemImage = "123oct14-Ensamblajeyprimeraubicacion1.jpg"
   [gallery.items.18]
     itemName = "Item 2"
     itemCaption = "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
-    itemThumb = "201nov14-Segundaubicación8-thumb.jpg"
-    itemImage = "201nov14-Segundaubicación8.jpg"
+    itemThumb = "201nov14-Segundaubicacion8-thumb.jpg"
+    itemImage = "201nov14-Segundaubicacion8.jpg"
   [gallery.items.19]
     itemName = "Item 3"
     itemCaption = "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
