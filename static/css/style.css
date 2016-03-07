@@ -209,13 +209,13 @@ header {
 
 header .intro-text {
 	padding-top: 100px;
-	padding-bottom: 50px;
+	padding-bottom: 300px;
 }
 
 @media (min-width: 768px) {
 	header .intro-text {
 		padding-top: 230px;
-		padding-bottom: 400px;
+		padding-bottom: 500px;
     }
 }
 
@@ -239,10 +239,10 @@ header .intro-text .intro-lead-in {
 	}
 }
 
-header .intro-text .intro-heading {
+header .intro-text .intro-statement {
 	text-transform: uppercase;
 	font-weight: 900;
-	font-size: 40px;
+	font-size: 30px;
 	line-height: 48px;
 	margin-bottom: 25px;
 	letter-spacing: -3px;
@@ -252,10 +252,11 @@ header .intro-text .intro-heading {
 }
 
 @media (min-width: 768px) {
-	header .intro-text .intro-heading {
+	header .intro-text .intro-statement {
 		line-height: 95px;
-		font-size: 77px;
+		font-size: 50px;
 		margin-bottom: 50px;
+		margin-top: 50px
 	}
 }
 
@@ -315,7 +316,7 @@ header .intro-text .intro-heading {
 	color: #969696;
 }
 
-.ot-circle {
+.item-circle {
 	height: 45px;
 	width: 45px;
 	text-align: center;
@@ -367,14 +368,14 @@ figcaption {
 	height: 100%;
 }
 
-.ot-portfolio-item figure figcaption > a {
+.portfolio-item figure figcaption > a {
 	z-index: 1000;
 	text-indent: 200%;
 	white-space: nowrap;
 	font-size: 0;
 	opacity: 0;
 }
-.ot-portfolio-item figure figcaption, .ot-portfolio-item figure figcaption > a {
+.portfolio-item figure figcaption, .portfolio-item figure figcaption > a {
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -625,10 +626,8 @@ color: #fff;
 
 .panel {
   border-radius: 0;
-	border: 0;
-	margin: 0;
-	border-color: #FFF;
-	border-bottom: none;
+	border: 0.5px solid light-gray;
+	margin: 4px;
 }
 
 
@@ -684,4 +683,14 @@ color: #fff;
 
 .mfp-figure figure {
   background-color: transparent;
+	cursor: default;;
+}
+
+.mfp-title {
+	font-family: "Open Sans",sans-serif;
+	text-transform: uppercase;
+}
+
+.mfp-counter {
+	font-family: "Open Sans",sans-serif;
 }

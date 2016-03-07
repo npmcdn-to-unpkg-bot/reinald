@@ -4,8 +4,7 @@
 			<div class="container">
 				<div class="slider-container">
 					<div class="intro-text">
-						<div class="intro-lead-in">{{.Site.Params.header.leadIn}}</div>
-						<div class="intro-heading">{{.Site.Params.header.heading}}</div>
+						<div class="intro-statement">{{.Site.Params.header.statement}}</div>
 						<a href="#galleries" class="page-scroll btn btn-xl">{{.Site.Params.header.buttonText}}</a>
 					</div>
 				</div>
@@ -27,13 +26,13 @@
 					{{range .Site.Params.gallerylist}}
 					<!-- start portfolio item -->
 					<div class="col-md-4 col-0-gutter">
-						<div class="ot-portfolio-item">
+						<div class="portfolio-item">
 							<figure class="effect-bubba">
 								<img src="galleries/images/{{.galleryImage}}" alt="img02" class="img-responsive" />
 								<figcaption>
 									<h2>{{.galleryName}}</h2>
 									<p>{{.galleryCaption}}</p>
-									<a href="galleries/muebles/">View more</a>
+									<a href="galleries/{{.galleryKey}}/">View more</a>
 								</figcaption>
 							</figure>
 						</div>
@@ -59,7 +58,7 @@
 					<!-- about module -->
 					<div class="col-md-3 text-center">
 						<div class="module-about">
-							<i class="fa fa-check ot-circle"></i>
+							<i class="fa fa-check item-circle"></i>
 							<h3>{{.aboutItemTitle}}</h3>
 							<p>{{.aboutItemDescription}}</p>
 						</div>

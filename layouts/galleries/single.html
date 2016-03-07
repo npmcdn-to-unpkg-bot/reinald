@@ -4,19 +4,26 @@
   <div class="container">
     <div class="row spacer"></div>
     <div class="row">
+      <div class="col-lg-12 text-center">
+        <div class="section-title">
+          <h2>{{.Title}}</h2>
+        </div>
+      </div>
+    </div>
+    <div class="row">
       <div class="grid zoom-gallery">
         <div class="grid-sizer"></div>
         {{range .Params.gallery.items}}
         <div class="grid-item">
           <div class="panel panel-default">
-            <div class="panel-caption text-center">
-              {{.itemCaption}}
-            </div>
-            <a class="gallery-item" href="images/{{.itemImage}}">
+            <a class="gallery-item" href="images/{{.itemImage}}" caption="{{.itemName}}">
               <img class="img-responsive" src="images/{{.itemThumb}}" alt="">
             </a>
             <div class="panel-footer text-center">
               {{.itemName}}
+            </div>
+            <div class="panel-caption text-center">
+              {{.itemCaption}}
             </div>
           </div>
         </div>

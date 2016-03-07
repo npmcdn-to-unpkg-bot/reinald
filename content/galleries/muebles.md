@@ -1,8 +1,6 @@
 +++
 date = "2016-03-02T14:57:01-08:00"
-title = "muebles"
-
-someothervariable = "TEST"
+title = "Perritos"
 
 [gallery.items]
   [gallery.items.1]

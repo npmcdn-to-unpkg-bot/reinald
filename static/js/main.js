@@ -62,7 +62,7 @@ $(function () {
   $('section').imagesLoaded(function() {
     setTimeout(function() {
       scrollToAnchor(target);
-    }, 250);
+    }, 150);
   });
 
   // Set up masonry (TODO: only in galleries)
