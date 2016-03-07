@@ -86,13 +86,13 @@ title = "Repisas"
   [gallery.items.17]
     itemName = "Item 1"
     itemCaption = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-    itemThumb = "1 23oct14 - Ensamblaje y primera ubicación 1-thumb.jpg"
-    itemImage = "1 23oct14 - Ensamblaje y primera ubicación 1.jpg"
+    itemThumb = "123oct14-Ensamblajeyprimeraubicación1-thumb.jpg"
+    itemImage = "123oct14-Ensamblajeyprimeraubicación1.jpg"
   [gallery.items.18]
     itemName = "Item 2"
     itemCaption = "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
-    itemThumb = "2 01nov14 - Segunda ubicación 8-thumb.jpg"
-    itemImage = "2 01nov14 - Segunda ubicación 8.jpg"
+    itemThumb = "201nov14-Segundaubicación8-thumb.jpg"
+    itemImage = "201nov14-Segundaubicación8.jpg"
   [gallery.items.19]
     itemName = "Item 3"
     itemCaption = "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
@@ -111,8 +111,8 @@ title = "Repisas"
   [gallery.items.22]
     itemName = "Item 4"
     itemCaption = "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-    itemThumb = "2013-01-26 14.17.45-thumb.jpg"
-    itemImage = "2013-01-26 14.17.45.jpg"
+    itemThumb = "2013-01-2614.17.45-thumb.jpg"
+    itemImage = "2013-01-2614.17.45.jpg"
   [gallery.items.23]
     itemName = "Item 4"
     itemCaption = "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
